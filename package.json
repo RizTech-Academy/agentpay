@@ -1,0 +1,16 @@
+{
+  "name": "agentpay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AgentPay — the practice system under test for the RizTech Academy QA & Test Automation course.",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=@agentpay/api",
+    "dev:web": "npm run dev --workspace=@agentpay/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test:api": "npm run test --workspace=@agentpay/api",
+    "test:e2e": "npm run test:e2e --workspace=@agentpay/web"
+  }
+}
